@@ -1,0 +1,34 @@
+
+*{margin: 0; padding: 0;}
+div.content{padding-left: 20%;}
+input {display: none;}
+nav{
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  background-color: #3498db;
+  z-index: 999;
+}
+nav li{
+  list-style: none;
+  color: #ecf0f1;
+}
+nav li label{
+  width: 90%;
+  height: 3.5em;
+  line-height: 3.5em;
+  display: block;
+  font-size: 1em;
+  padding: 0 10%;
+}
+.content div{
+  position: absolute;
+  top: -100%;
+  padding-left: 5%;
+  padding-top: 2.5%;
+  transition: top 1s ease;
+}
+input:checked + div{
+  top: 0vh;
+  transition: top .5s ease;
+}
